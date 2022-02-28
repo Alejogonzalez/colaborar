@@ -1,36 +1,18 @@
-### Proyecto Colaborativo INTECOL - AUTOMATIZACIÓN
-![](https://intecol.com.co/wp-content/uploads/2017/09/E-01-300x300.png)
+<link rel="stylesheet" href="editormd/css/editormd.css" />
+<div id="test-editor">
+    <textarea style="display:none;">### Editor.md
 
-###TeX(LaTeX)
-   
-$$E=mc^2$$
-
-Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。
-
-$$\(\sqrt{3x-1}+(1+x)^2\)$$
-                    
-$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
-                
-###FlowChart
-
-```flow
-st=>start: Login
-op=>operation: Login operation
-cond=>condition: Successful Yes or No?
-e=>end: To admin
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
-
-###Sequence Diagram
-                    
-```seq
-Andrew->China: Says Hello 
-Note right of China: China thinks\nabout it 
-China-->Andrew: How are you? 
-Andrew->>China: I am good thanks!
-```
-
-###End
+**Editor.md**: The open source embeddable online markdown editor, based on CodeMirror & jQuery & Marked.
+    </textarea>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="editormd/editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("test-editor", {
+            // width  : "100%",
+            // height : "100%",
+            path   : "editormd/lib/"
+        });
+    });
+</script>
